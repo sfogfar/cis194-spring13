@@ -1,3 +1,5 @@
+{-# OPTIONS_GHC -Wall #-}
+
 -- cis 194 week 01 homework
 -- exercise 01
 toDigits :: Integer -> [Integer]
