@@ -14,7 +14,7 @@ toDigitsRev n
 doubleEveryOther :: [Integer] -> [Integer]
 doubleEveryOther [] = []
 doubleEveryOther (x:xs)
-  | isEven (length (x:xs)) = x * 2 : doubleEveryOther xs
+  | even (length (x:xs)) = x * 2 : doubleEveryOther xs
   | otherwise = x : doubleEveryOther xs
 
 -- exercise 03
@@ -44,6 +44,3 @@ lastDigit n = n `mod` 10
 
 butLastDigit :: Integer -> Integer
 butLastDigit n = n `div` 10
-
-isEven :: Int -> Bool
-isEven n = n `mod` 2 == 0
